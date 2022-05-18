@@ -38,6 +38,9 @@ class SupervisedRegressionNetwork():
       # import matplotlib.pyplot as plt
       import tensorflow as tf 
       import tflearn
+      import tensorflow.compat.v1 as tf
+      tf.disable_v2_behavior()
+      #config = tf.compat.v1.ConfigProto()
       config = tf.ConfigProto()
       config.allow_soft_placement=True
       config.gpu_options.allow_growth = True
@@ -96,7 +99,7 @@ class SupervisedRegressionNetwork():
         avg_cost+= c/total_batch
       #Display logs per epoch
       if epoch%self.display_step == 0:
-        print "epoch:", '%04d' % (epoch+1), "cost=", \
+        print ("epoch:"), '%04d' % (epoch+1), "cost=", \
               "{:.9f}".format(np.sqrt(avg_cost))
     print('optimization finished!')
     return np.sqrt(avg_cost)

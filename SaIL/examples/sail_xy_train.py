@@ -10,6 +10,23 @@ import os
 import pprint
 import sys
 sys.path.insert(0, "../../planning_python")
+sys.path.insert(0, "../../planning_python/planning_python/data_structures")
+sys.path.insert(0, "../../planning_python/planning_python/planners")
+sys.path.insert(0, "../../planning_python/planning_python/cost_functions")
+sys.path.insert(0, "../../planning_python/planning_python/heuristic_functions")
+sys.path.insert(0, "../../planning_python/planning_python/state_lattices")
+sys.path.insert(0, "../../planning_python/planning_python/environment_interface")
+sys.path.insert(0, "../../planning_python/planning_python/utils")
+sys.path.insert(0, "../../planning_python/planning_python/test")
+sys.path.insert(0, "../../planning_python/planning_python/state_lattices/common_lattice")
+
+sys.path.insert(0, "../SaIL/agents")
+sys.path.insert(0, "../SaIL/envs")
+sys.path.insert(0, "../SaIL/learners")
+sys.path.insert(0, "../SaIL/network")
+sys.path.insert(0, "../SaIL/oracle")
+sys.path.insert(0, "../SaIL/planners")
+sys.path.insert(0, "../SaIL/results")
 sys.path.insert(0, "..")
 import matplotlib.pyplot as plt
 import numpy as np
