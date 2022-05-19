@@ -42,5 +42,5 @@ ORACLE_FILE_TYPE="json"
 
 
 
-python sail_xy_test.py --test_folders ${TEST_FOLDER_5} --test_oracle_folders ${ORACLE_FOLDER_5} --model_files ${MODEL_FILE_5} --result_folders ${RESULTS_FOLDER_5} --num_envs ${NUM_ENVS} --test_file_start_num ${TEST_FILE_START_NUM} --oracle_file_type ${ORACLE_FILE_TYPE} # --visualize 
+python3 sail_xy_test.py --test_folders ${TEST_FOLDER_5} --test_oracle_folders ${ORACLE_FOLDER_5} --model_files ${MODEL_FILE_5} --result_folders ${RESULTS_FOLDER_5} --num_envs ${NUM_ENVS} --test_file_start_num ${TEST_FILE_START_NUM} --oracle_file_type ${ORACLE_FILE_TYPE} # --visualize 
 

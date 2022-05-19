@@ -85,11 +85,11 @@ class SupervisedRegressionNetwork():
   def train(self, database):
     #Shuffle the database
     # random.shuffle(database)
-    for epoch in xrange(self.training_epochs):
+    for epoch in range(self.training_epochs):
       random.shuffle(database)
       avg_cost = 0.
       total_batch = int(len(database)/self.batch_size)
-      for i in xrange(total_batch):
+      for i in range(total_batch):
         batch_x, batch_y = self.get_next_batch(database, i)
         #Run optimization op(backprop) and cost op(to get loss value)
         _, c = self.sess.run([self.graph_ops['train_net'], self.graph_ops['cost']],\
