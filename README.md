@@ -11,7 +11,7 @@ Official repository containing OpenAI Gym environments, agents and ML models for
 One you have installed the required external dependencies (favorably in a virtualenv), you need to execute the following steps in order to get started with the examples.
 
  - Create a meta folder for the project ``mkdir ~/heuristic_learning `` 
- - Get the 2D planning datasets: ``git clone  https://github.com/SmolkinaJulia/RL_SaIL_project.git
+ - Get the 2D planning datasets: ``git clone https://github.com/SmolkinaJulia/heuristic_learning_mipt_2022.git
  - Go to the ``examples/`` folder: ``cd ~/heuristic_learning/SaIL/examples``
  - Run ``./run_generate_oracles_xy.sh`` which will generate oracles for all the train, validation and test datasets in the ``motion_planning_datasets`` folder
  - Run ``./run_sail_xy_train.sh`` to train a heuristic for one of the datasets (you can specify the dataset you want inside the script). This runs SaIL for 10 iterations by default. For more information on the rest of the parameters used see the file ``sail_xy_train.py`` 
